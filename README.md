@@ -6,7 +6,7 @@ words in the text. The app supports paginated results and can be reset to handle
 ## Screenshot
 Here is how the web application looks in the browser:
 
-![TF-IDF Web Page Screenshot](screenshots/webpage_screenshot.png)
+![TF-IDF Web Page Screenshot](screenshots/webpage-screenshot.png)
 
 ## Features
 - Upload `.txt` files to analyze
