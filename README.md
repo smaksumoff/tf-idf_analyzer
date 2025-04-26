@@ -3,6 +3,11 @@
 This is a simple Flask-based web application that allows users to upload a text file and compute TF-IDF values for the 
 words in the text. The app supports paginated results and can be reset to handle new files.
 
+## Screenshot
+Here is how the web application looks in the browser:
+
+![TF-IDF Web Page Screenshot](screenshots/webpage_screenshot.png)
+
 ## Features
 - Upload `.txt` files to analyze
 - Tokenizes text into words and sentences
@@ -36,3 +41,5 @@ words in the text. The app supports paginated results and can be reset to handle
 1. Click the "**Upload**" button to upload a `.txt` file.
 2. View the TF-IDF analysis and navigate pages using "**Previous**" and "**Next**".
 3. Click "**Reset**" to clear results and start over.
+
+## 
