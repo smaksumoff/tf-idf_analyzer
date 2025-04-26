@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+    line-height: 1.6;
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form input, form button {
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    width: 33%;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: #a32517;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.reset-button:hover {
+    background-color: #8B0000;
+}
+
+.pagination {
+    margin: 1em auto;
+    text-align: right;
+    width: 70%;
+}
+
+.pagination .button {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 0 0 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination .button:hover {
+    background-color: #0056b3;
+}

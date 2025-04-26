@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF-IDF</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Upload a text file</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit" class="button">Upload</button>
+        <a href="/reset" class="reset-button">Reset</a>
+    </form>
+
+    {% if result_table %}
+    <h1>TF-IDF Analysis</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>TF</th>
+                <th>IDF</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in result_table %}
+            <tr>
+                <td>{{ row.word }}</td>
+                <td>{{ row.tf }}</td>
+                <td>{{ row.idf }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <div id="pagination" class="pagination">
+        {% if current_page > 1 %}
+            <a href="/?page={{ current_page - 1 }}#pagination" class="button">Previous</a>
+        {% endif %}
+
+        Page {{ current_page }} of {{ total_pages }}
+
+        {% if current_page < total_pages %}
+            <a href="/?page={{ current_page + 1 }}#pagination" class="button">Next</a>
+        {% endif %}
+    </div>
+    {% endif %}
+</body>
+</html>
